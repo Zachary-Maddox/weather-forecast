@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/style.css" />
+        <title> Weather Forecast</title>
+    </head>
+
+    <body>
+        <header class="mb-2">
+            <nav
+                class="navbar navbar-dark bg-dark d-flex justify-content-center"
+            >
+                <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+            </nav>
+        </header>
+        <main>
+            <section class="row">
+                <div class="col-3">
+                    <div class="form-group p-2">
+                        <label for="searchCity">
+                            <h2>Search for a City</h2>
+                        </label>
+                        <input
+                            id="searchCity"
+                            type="text"
+                            class="form-control w-100"
+                            placeholder="Search for a City"
+                            aria-label="Search for a City"
+                            aria-describedby="button-addon2"
+                        />
+                        <div class="input-group-append">
+                            <button
+                                class="btn btn-outline-secondary mt-2 w-100"
+                                type="button"
+                                id="searchBtn"
+                            >
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="searchHistory"></div>
+                </div>
+                <section class="col">
+                    <div class="row border">
+                        <div class="col">
+                            <h2>
+                                <span class="city"> Anniston (7/6/2022)</span>
+                                <i><img class="cityIcon"  src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img></i>
+                            </h2>
+                            <p>Temp: <span class="tempCity">74.01</span></p>
+                            <p>Wind: <span class="windCity">6.67</span>MPH</p>
+                            <p>Humidity: <span class="humidityCity">46</span>%</p>
+                            <p>UV Index: <span class="uvIndexCity">0.47</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h2>5-Day Forecast</h2>
+                            <div class="d-flex flex-wrap">
+                                <div class="card mr-4 mb-4" style="width:12rem">
+                                    <div class="card-body">
+                                        <h3 class="dateCard0">7/6/2022</h3>
+                                        <img class="weatherIcon0"  src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img>
+                                        <p>
+                                            Temp:
+                                            <span class="tempCard0">74.01</span>
+                                        </p>
+                                        <p>
+                                            Wind:
+                                            <span class="windCard0">6.67</span>MPH
+                                        </p>
+                                        <p>
+                                            Humidity:
+                                            <span class="humidityCard0">46</span>%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mr-4 mb-4" style="width:12rem">
+                                    <div class="card-body">
+                                        <h3 class="dateCard1">7/6/2022</h3>
+                                        <img class="weatherIcon1"  src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img>
+                                        <p>
+                                            Temp:
+                                            <span class="tempCard1">74.01</span>
+                                        </p>
+                                        <p>
+                                            Wind:
+                                            <span class="windCard1">6.67</span>MPH
+                                        </p>
+                                        <p>
+                                            Humidity:
+                                            <span class="humidityCard1">46</span>%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mr-4 mb-4" style="width:12rem">
+                                    <div class="card-body">
+                                        <h3 class="dateCard2">7/6/2022</h3>
+                                        <img class="weatherIcon2" src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img>
+                                        <p>
+                                            Temp:
+                                            <span class="tempCard2">74.01</span>
+                                        </p>
+                                        <p>
+                                            Wind:
+                                            <span class="windCard2">6.67</span>MPH
+                                        </p>
+                                        <p>
+                                            Humidity:
+                                            <span class="humidityCard2">46</span>%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mr-4 mb-4" style="width:12rem">
+                                    <div class="card-body">
+                                        <h3 class="dateCard3">7/6/2022</h3>
+                                        <img class="weatherIcon3"  src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img>
+                                        <p>
+                                            Temp:
+                                            <span class="tempCard3">74.01</span>
+                                        </p>
+                                        <p>
+                                            Wind:
+                                            <span class="windCard3">6.67</span>MPH
+                                        </p>
+                                        <p>
+                                            Humidity:
+                                            <span class="humidityCard3">46</span>%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mb-4" style="width:12rem">
+                                    <div class="card-body">
+                                        <h3 class="dateCard4">7/6/2022</h3>
+                                        <img class="weatherIcon4" src=" https://openweathermap.org/img/wn/10d.png" alt="Weather Icon"></img>
+                                        <p>
+                                            Temp:
+                                            <span class="tempCard4">74.01</span>
+                                        </p>
+                                        <p>
+                                            Wind:
+                                            <span class="windCard4">6.67</span>MPH
+                                        </p>
+                                        <p>
+                                            Humidity:
+                                            <span class="humidityCard4">46</span>%
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <script
+                src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"
+            ></script>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+                crossorigin="anonymous"
+            ></script>
+            <script src="./assets/script.js"></script>
+        </main>
+    </body>
+</html>
