@@ -25,7 +25,7 @@ function getStorage() {
 async function getLongLat() {
     const cityName = searchCityEl.value;
     searchCityEl.value = "";
-    const url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
     console.log(data[0].lat);
